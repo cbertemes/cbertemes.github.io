@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 50px 10px 10px;
   width: 500px;
 }
+.pull-leftB{
+  padding: 10px 50px 5px 0px;
+  width: 650px;
+}
 
 
 
