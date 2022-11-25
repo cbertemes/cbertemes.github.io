@@ -1,0 +1,503 @@
+/* ================ */
+/*    Body          */
+/* ================ */
+body 
+{
+/*	font-family: 'Open Sans', serif;*/
+	font-family: 'Arial';
+  /*font-family: 'Microsoft Sans Serif';*/
+	padding-top: 54px;
+	padding-left: 200px;
+  padding-right: 30px;
+	/*color: #868e96;*/ 
+  /*color: #515A5A;*/ 
+  color:black;
+	position:relative;
+  font-size: 165%;
+  text-align: justify;
+  text-justify: inter-word;
+
+	/*background: #D5D8DC; /*Light grey*/
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Next Condensed';
+  color: #515A5A;
+}
+
+/* ===================== */
+/*  Def. properties for: */
+/*    Avatar image       */
+/* ===================== */
+.img-avatar {
+	border-radius: 50%;
+	max-width: 150px;
+	max-height: 150px;
+	/*padding-left: 30px;*/
+	/*padding: 0.5rem;*/
+	padding-left: 5px;
+	padding-right: 0px;
+	margin-right: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.image-avatar{
+  padding-left: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+  }
+
+/* ===================== */
+/*  Def. properties for: */
+/*    Figures cut from   */
+/*    papers             */
+/* ===================== */
+
+.img-paperfig{
+  max-width: 600px;
+  max-height: 600px;
+  /*padding: 10px 10px 10px 10px;*/
+}
+.pull-right{
+  padding: 10px 10px 10px 50px;
+}
+.pull-left{
+  padding: 10px 50px 10px 10px;
+  width: 500px;
+}
+
+
+
+/*hr {
+    height: 3px;
+    color: black;
+}*/
+/* ===================== */
+/*  Def. properties for: */
+/*   The sidebar menu    */
+/* ===================== */
+
+
+
+
+
+.navbar-default {
+  background-color:teal;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
+
+
+.navbar {
+    height: 100%; /*Full-height: remove this if you want "auto" height */
+    width: 180px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    color: #1A1A1A; /* Blue */
+    background-color: #1A5276; /* Blue */
+    background-image: none;
+	  background-repeat: no-repeat;
+
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+/*---------------------------------------------------------------*/
+
+/* ======================= */
+/*   Navigation menu links */
+/* ======================= */
+
+.navbar-inverse a {
+    /*padding: 6px 8px 6px 16px;*/
+    width:180px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #1A5276;  /* Blue */
+    color: #999;
+    /*text-shadow: 0.5px 0.5px black; */
+
+    font-family: 'Avenir Next Condensed';
+    text-align: center;
+    
+    display: block;
+}
+
+
+.navbar-header{
+  font-family: 'Arial';
+  color: black;
+  text-align: center;
+}
+
+.nav li{
+    float:left;
+}
+
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#BDC3C7  ;
+  height: 2px;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+}
+/* On smaller screens, where width is less than ...px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 1050px) {
+    .pull-left, .pull-right{
+    width:  350px;
+    }
+    body 
+    {
+      font-size: 140%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .pull-left, .pull-right{
+    width:  280px;
+    }
+    .navbar {
+      height: 100%; /*Full-height: remove this if you want "auto" height */
+      width: 155px; /* Set the width of the sidebar */
+    }
+    .navbar-inverse a {
+      /*padding: 6px 8px 6px 16px;*/
+      width:155px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* 850px) {*/
+/*    .navbar {max-width: 50px;} */
+    .navbar-default {
+    /*  max-width: 50px;*/
+      max-height:50px;
+      display: block;
+      float: none!important;
+      margin: 7.5px -15px;
+    }
+    .navCollapse{
+      max-height:50px;
+    }
+
+    .navbar {
+      height: auto;  /*Full-height: remove this if you want "auto" height */
+      width: auto; /*100%;*/
+      padding-top: 0px;
+    }
+    .navbar-inverse a {
+      /*padding: 6px 8px 6px 16px;*/
+      width:100%;
+      font-size: 130%;
+      text-align: left;
+      padding-right: 10px;
+    }
+
+    .navbar-toggle.navbar-left {
+      float: left;
+      margin-left: 10px;
+      width: 20px;
+    }
+    .navbar-header{
+      width: 20px;
+      padding-left: 65px;
+    }
+    .icon-bar{
+      float: center;
+      width: 100px;
+    }
+
+    /*.navbar-inverse {max-width: 70px;}*/
+/*    .navbar-collapse.collapse { display: none!important; } */
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+/*    .navbar-collapse {
+        display: block;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }*/
+    .navbar-nav { 
+        display: block;
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .nav {
+    font-size: .95em;
+    }
+
+    /* change hamburger button border color */
+    .navbar-inverse .navbar-toggle.collapsed {
+      border-color: #1A5276; /* gray;*/
+    }
+    .navbar-inverse .navbar-toggle{
+      border-color: #1A5276; /* gray;*/
+    }
+
+    /* Decrease size of paper figs and padding */
+    .pull-left, .pull-right{
+    /*width: 250px;*/
+    width: 100%;
+    }
+    .UoB-logo{
+      width: 50%;
+    }
+    body{
+      padding-left: 10%; /* 80px; */
+      padding-right: 10%; /*20px;*/
+      font-size: vw; /*120%;*/
+    }
+    h1, h2  {
+      font-family: 'Avenir Next Condensed';
+      color: #515A5A;
+      font-size: 150%; 
+    }
+    h3, h4, h5, h6  {
+      font-family: 'Avenir Next Condensed';
+      color: #515A5A;
+      font-size: 130%; 
+    }
+    .flex-container{
+      flex-direction: column;
+    }
+
+    h1, h2  {
+      font-family: 'Avenir Next Condensed';
+      color: #515A5A;
+      font-size: 150%; 
+    }
+    h3, h4, h5, h6  {
+      font-family: 'Avenir Next Condensed';
+      color: #515A5A;
+      font-size: 130%; 
+    }
+} 
+/*---------------------------------------------------------------*/
+
+/* Other stuff */
+.insert-space{
+  padding-bottom: 3px
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.fig-caption-leftpull{
+  font-size: 14px;
+  color: black;
+  padding-left: 15px;
+  padding-right: 55px;
+}
+.fig-caption-rightpull{
+  font-size: 14px;
+  color: black;
+  padding-right: 15px;
+  padding-left: 55px;
+}
+
+
+
+.CB-logo {
+  font-family: 'Avenir Next Condensed';
+  /*font-family: 'Microsoft Sans Serif';*/
+  /*font-family: 'Tahoma';*/
+  font-weight: 500;
+  color: #999;
+  font-size: 29px;
+  text-align: center;
+  padding-top: 0px;
+  /*text-shadow: 1.5px 1px #34495E;*/
+  /*color: white;*/
+  text-shadow: 1px 1px #283747; /*, -1px -1px #283747;*/
+}
+
+br {
+  line-height: 50%;
+}
+
+.p-logo {
+  /*padding: 0px 8px 6px 16px;*/
+  font-family: 'Avenir Next Condensed';
+  color: #999; /*#7F8C8D; #999;*/
+  color: #808B96; /*silver;  #527EA1;*/
+  /*text-shadow: 2px 2px 15px #5499C7, 0.5px 0.5px black;*/
+  /*text-shadow:0.3px 0.3px black;*/
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+
+.paper-link{
+  font-family: 'Avenir Next Condensed';
+  color: #515A5A;
+  font-weight: 650;
+}
+
+
+.warning{
+  color: red;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7; cursor: pointer;}
+#myImg2:hover {opacity: 0.7; cursor: pointer;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* The Close Button */
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+/*@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}*/
+
+
+/*
+.collapse {
+  height: auto;
+  width: auto;
+}
+
+.collapse.height {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+.collapse.width {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.35s ease;
+  -moz-transition: width 0.35s ease;
+  -o-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+.collapse.in.width {
+  width: auto;
+}
+
+.collapse.in.height {
+  height: auto;
+}
+*/
+}

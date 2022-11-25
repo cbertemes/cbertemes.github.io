@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ================= -->
+<!--       HEAD        -->
+<!-- ================= -->
+
+	<head> 
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title> Caroline Bertemes</title>
+
+		<!-- Plugin JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+		<!-- Include Bootstrap library (CSS+JavaScript)-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Include MathJax to display LaTeX formulas -->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script> 
+
+		<!-- Enable putting formulas between single dollar signs - By default, they need double dollar signs: "$$ x^2 $$" -->
+		<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/1140/2.0/1140.min.css"></script>
+
+		<!-- Include Font Awesome for icons for e-mail, twitter etc.-->
+		
+		<!--<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+		-->
+		<script src="https://use.fontawesome.com/eea8a6c398.js"></script>
+
+
+
+		<!-- Own CSS -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	</head>
+
+
+<!-- ================= -->
+<!--       BODY        -->
+<!-- ================= -->
+	<!-- In the body, use ScrollSpy to enable scrolling in the navigation bar -->
+	<body data-spy="scroll" data-target=".navbar" data-offset="100"> 
+
+		<!-- ================= -->
+		<!--  Side navigation  -->
+		<!-- ================= -->
+
+		<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<div>
+					<!--<button type="navbar-button" class="navbar-toggle" data-target="#navCollapse" data-toggle="collapse"> -->
+					<button type="navbar-button" class="navbar-toggle" data-target=".navCollapse" data-toggle="collapse"> 
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+          	</div>
+		    <!--<div class="navbar-collapse collapse"  id="navCollapse"> -->
+		    <div class="navbar-collapse collapse navCollapse">
+				<header>
+				<div class="navbar-collapse collapse navHeadCollapse">
+				<!-- <div class="navbar-nav nav center"> -->
+					<div class="flex-container-column">
+						<!--<span class="image-avatar"><img class="img-avatar" src="images/Passfoto_2017_bw.jpg" alt="Avatar" width="100" height="120"></span> -->
+						<!-- <span class="image-avatar"><img class="img-avatar" src="images/Umbrellas2.png" alt="Avatar" width="120" height="120"></span> -->
+						<!-- <span class="image-avatar"><img class="img-avatar" src="images/Reykjavik_3_square.png" alt="Avatar" width="120" height="120"></span>  -->
+						<span class="image-avatar"><img class="img-avatar" src="images/Skeleton.png" alt="Avatar" width="120" height="120"></span> 
+						<!-- Umbrellas2.png -->
+						<!-- Do an "empty link" so that the logo stays aligned with the navbar items -->
+						<p><a href="#"> </a></p>
+						<p class="CB-logo"> C<small><small>AROLINE</small></small> <br>B<small><small>ERTEMES</small></small> </p>
+						<p class="p-logo">Postdoctoral Scholar<br>
+						Astronomisches Rechen-Institut,<br>
+						Heidelberg</p>
+						<p class="insert-space"></p>
+					</div>
+				</div>
+				</header>
+
+        		<ul class="nav navbar-nav center">
+        		<!-- <ul class="nav navbar-nav navbar-collapse collapse center">	-->
+          			<li class="nav-item active"> <a href="#about">About</a> </li>
+          			<li class="nav-item"> <a href="#research">Research</a> </li>
+          			<li class="nav-item"> <a href="#talks">Talks</a> </li>
+          			<li class="nav-item"> 
+          				<!--<a href="#TeachingOutreach">Teaching and <p class="insert-space"></p> Outreach</a> -->
+          				<a href="#teaching_outreach">Outreach</a> 
+          			</li>
+          			<li class="nav-item"> <a href="#cv">CV</a> </li>
+          			<li class="nav-item"> <a href="#contact">Contact</a> </li>
+          		</ul>
+          	</div>
+    	</nav>
+
+		<!-- Section 1 -->
+		<div id="about">
+			<h1>About</h1>
+			<p><strong> I am a postdoctoral researcher at the <a href="https://wwwstaff.ari.uni-heidelberg.de/dwylezalek/galena.html" class="active">Astronomisches Recheninstitut (ARI)</a> in Heidelberg working with Dr. Dominika Wylezalek in the DFG-funded <a href="https://wwwstaff.ari.uni-heidelberg.de/dwylezalek/galena.html" class="active">GALENA</a> group.</strong> I obtained my PhD in astrophysics from the University of Bath in 2020, and completed my Master's degree at ETH Zurich. </br> 
+			<!-- I am using multi-wavelength observations ranging from the radio to the optical(-IFU).  --> 
+
+			<p class="insert-space"></p>
+			My research interests lie in the broad field of AGN and galaxy evolution. </br>
+			<!--How is the star formation in galaxies connected to different gas phases, AGN, galaxy structure and interactions with their environment? -->
+			In particular, how is the star formation in galaxies connected to:
+			<ul type="disk">
+			    <li> different gas phases, </li>
+			    <li> AGN activity, </li>
+			    <li> galaxy structure, </li>
+			    <li> their historical growth, </li>
+			    <li> interactions with their environment? </li>
+			</ul>
+			</br>
+
+			I am a member of the <a href="https://wwwstaff.ari.uni-heidelberg.de/dwylezalek/mascot.html" class="active">MASCOT</a> survey, the MaNGA-ARO Survey of CO Targets, an ongoing ESO Public Spectroscopic Survey conducted at the Arizona Radio Observatory (ARO). MASCOT is collecting CO-based molecular gas measurements for nearby galaxies with available optical-IFU data. The first data release is <a href="https://wwwstaff.ari.uni-heidelberg.de/dwylezalek/mascot.html#Data" class="active">out</a> - and <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.3119W/abstract" class="active">here</a> you can find the release paper!  </br></br>
+
+			I am also involved in the JWST Early Release Science program <a href="https://q3d.github.io/" class="active">Q3D</a>. Q3D is targeting 3 luminous quasars with powerful outflows at intermediate redshifts. <a href="https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_uncovers_dense_cosmic_knot_in_the_early_Universe" class="active">Here </a>you can find the press release accompanying our first results - presenting the complex environment of a z=3 quasar, and potentially one of the densest knots at that time! </br>
+			Our team is developing <a href="https://q3dfit.readthedocs.io/en/latest/" class="active">q3dfit</a>, a new spectral analysis and PSF decomposition tool. </br></br>
+			<!-- how the amount on molecular gas (constituting the fuel for star formation) varies as a function of spatially resolved galaxy properties, including  -->
+			My PhD thesis focused on dissecting galaxies into their different mass components (stellar populations, gas phases, dark matter), and weighing each of them. </br> <!-- This will allow us to establish a robust observational foundation on which a cohesive theory of galaxy evolution can be built that incorporates the interplay of different galactic elements within the surrounding ecosystem.  -->
+			<!-- I have also worked on the demographics of supermassive black holes. -->
+			<!-- </br> 
+			<p class="insert-space"></p>
+			In more detail, my work includes for example:
+			<ul type="disk">
+			    <li> The calibration of dust- and CO-based methods to probe the cold gas reservoir within galaxies 
+				</li>
+			    <li> The use of dynamical tracers to constrain the overall enclosed mass budget, including dark matter 
+				</li>
+			    <li> Reconstructing the stellar mass build-up for different populations of galaxies via full spectral fitting with sophisticated stellar population model spectra 
+				</li>
+			    <li> Inferring galaxy mass and size growth by combining lookback studies from the distant Universe with the fossil record of local galaxies
+				</li>
+			    <li> Generating the optical-UV model emission around a grid of supermassive black holes and inferring their broad line properties via photoionization modelling, then conducting mock observations
+				</li>
+			</ul> -->
+
+			Please find a list of publications, projects and talks under <a href="#research" class="active">'Research'</a> and <a href="#talks" class="active">'Talks'</a> below.
+			</p>
+			<!--<p class="warning"><strong>This webpage is currently under construction. More to follow soon - stay tuned! </strong></p> -->			
+		</div>
+		<p class="insert-space"></p><hr /><p class="insert-space"></p>
+
+
+		<div id="research">
+			<h1>Research</h1>
+			<p class="insert-space"></p>
+			<h2>Galaxies</h2>
+			<!-- B18 -->
+			<p class="insert-space"></p>
+			<h3>Cross-calibration of CO- versus dust-based gas masses and assessment of the dynamical mass budget in Herschel-SDSS Stripe82 galaxies </h3>
+			<!--<p class="paper-link"><strong>(Bertemes et al. 2018, accepted for publication in MNRAS) </strong></p>-->
+			
+			<p class="paper-link"> <strong> <a href= "https://ui.adsabs.harvard.edu/abs/2018MNRAS.478.1442B/abstract" class="active">         Bertemes et al. (2018), MNRAS, 478, 1442</a> </strong> </p>
+			<!--<p class="paper-link"> <strong> <a href= "http://adsabs.harvard.edu/abs/2018MNRAS.478.1442B" class="active">         Bertemes et al. (2018), MNRAS, 478, 1442</a> </strong> </p>-->
+			<p class="insert-space"></p>
+			<div class="flex-container">
+				<div>
+				<p class="insert-space"></p>
+				<p class="insert-space"></p>
+				<p>We present a cross-calibration of CO- and dust-based molecular gas masses at $z \leqslant 0.2$. Our results are based on an IRAM survey collecting CO(1-0) measurements of 78 massive ($\log M_{*} > 10$) galaxies with known gas-phase metallicities, and with IR photometric coverage from WISE (22 $\mu{\rm m}$ ) and Herschel SPIRE ($250$, $350$, $500$ $\mu{\rm m}$). </br>
+				We find a tight relation ($\sim 0.17$ dex scatter) between the gas masses inferred from CO and dust continuum emission, with a minor systematic offset of $0.05$ dex.  The two methods can be brought into agreement by applying a metallicity-dependent adjustment factor ($\sim 0.13$ dex scatter). We illustrate that the observed offset is consistent with a scenario in which dust traces not only molecular gas, but also part of the ${\rm H}\,{\rm \small I}$  reservoir, residing in the ${\rm H_2}$-dominated region of the galaxy. 
+				Observations of the CO(2-1) to CO(1-0) line ratio for two thirds of the sample indicate a narrow range in excitation properties, with a median ratio of luminosities $ \left\langle R_{21} \right\rangle \sim 0.64 $. 
+				Finally, we find dynamical mass constraints from spectral line profile fitting to agree well with the anticipated mass budget enclosed within an effective radius, once all mass components (stars, gas and dark matter) are accounted for. </p>
+				</div>
+				<div>
+				<img  id="myImg" src="images/Mgas_dust_vs_CO_B13G12.png"  class="pull-right"  width="500">
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- The Close Button -->
+					  <span class="close">&times;</span>
+
+					  <!-- Modal Content (The Image) -->
+					  <img class="modal-content" id="img01">
+
+					  <!-- Modal Caption (Image Text) -->
+					  <div id="caption"></div>
+					</div>
+
+
+					<figcaption> <p class="fig-caption-rightpull"> Comparison between dust-based gas masses and CO-based gas masses. Cold gas masses from the two methods correlate strongly, albeit with a modest offset towards higher values for the dust-based inference. The 1-to-1 line (black solid) and the median offset (black dashed) are shown for reference. </p></figcaption>
+				</div>
+			</div>
+			<p class="insert-space"></p><hr /><p class="insert-space"></p>
+			<h2>Black Hole Physics</h2>
+			<p class="insert-space"></p>
+			<!--<p>The following work was done as part of my Master's degree at ETH Zurich in Prof. Kevin Schawinski's Black Hole Research Group, under the supervision of Dr. Benny Trakhtenbrot. </p> -->
+			<!--==============================-->
+			<!-- B16 -->
+			<!--==============================-->
+			<p class="insert-space"></p>
+			<h3> Testing the Completeness of the SDSS Colour Selection for Ultramassive, Slowly Spinning Black Holes </h3>
+			<p class="paper-link"> <strong> <a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.4041B/abstract" class="active">         Bertemes et al. (2016), MNRAS, 463, 4041</a> </strong> </p>
+			<!-- <p class="paper-link"> <strong> <a href="http://adsabs.harvard.edu/abs/2016MNRAS.463.4041B" class="active">         Bertemes et al. (2016), MNRAS, 463, 4041</a> </strong> </p>-->
+			
+			<!-- <div class="clearfix"> -->
+			<div class="flex-container">
+				<div><img id="myImg2" src="images/fcol_percentage_plot_lower_z_2.png" class="pull-left" >
+				<figcaption> <p class="fig-caption-leftpull"> Percentage of <em>observable</em> sources (i.e., within the flux limits) that are selected as possible quasar candidates in each bin of $\left(M_{BH},a_{\star}\right)$. Hatched bins indicate that all of the objects lie outside SDSS's flux limits. We stress that the number of observable objects varies between adjacent bins, even if they result in identical percentages of colour-selected objects. </p></figcaption>
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+
+					  <!-- The Close Button -->
+					  <span class="close2">&times;</span>
+
+					  <!-- Modal Content (The Image) -->
+					  <img class="modal-content" id="img02">
+
+					  <!-- Modal Caption (Image Text) -->
+					  <div id="caption"></div>
+					</div>
+
+				<p class="insert-space"></p>
+				</div>
+				<div><p>We investigate the sensitivity of the colour-based quasar selection algorithm of the Sloan Digital Sky Survey to several key physical parameters of supermassive black holes (SMBHs), focusing on BH spin ($a_{\star}$) at the high BH-mass regime $M_{BH} \geq 10^{9} M_{\odot}$). We use a large grid of model spectral energy distributions, assuming geometrically-thin, optically-thick accretion discs, and spanning a wide range of five physical parameters: BH mass $M_{BH}$, BH spin $a_{\star}$, Eddington ratio $ L/L_{Edd}$, redshift $z$, and inclination angle $inc$. </p>
+				<p>Based on the expected fluxes in the SDSS imaging ugriz bands, we find that $\sim 99.8$ % of our models with $M_{BH} \leq 10^{9.5} M_{\odot}$ are selected as quasar candidates and thus would have been targeted for spectroscopic follow-up. However, in the extremely high-mass regime, $\geq 10^{10} M_{\odot}$, we identify a bias against slowly/retrograde spinning SMBHs. The fraction of SEDs that would have been selected as quasar candidates drops below $\sim 50$ % for $a_{\star} < 0$ across $0.5 < z < 2$. For particularly massive BHs, with $M_{BH} \sim 3 \cdot 10^{10} M_{\odot}$, this rate drops below $\sim 20$ %, and can be yet lower for specific redshifts. We further find that the chances of identifying any hypothetical sources with $M_{BH} = 10^{11} M_{\odot}$ by colour selection would be extremely low at the level of $\sim 3$ \%.</p> 
+				<p>Our findings, along with several recent theoretical arguments and empirical findings, demonstrate that the current understanding of the SMBH population at the high-MBH, and particularly the low- or retrograde-spinning regime, is highly incomplete.</p></div>
+			</div>
+		<p class="insert-space"></p><hr /><p class="insert-space"></p>
+			
+		<!--==============================-->
+		<!-- Talks - still part of 'Research section' -->
+		<!--==============================-->
+
+		<!-- Section 2.5 -->
+		<div id="talks">
+
+			<h2>Talks &amp; workshops (Selection) </h2>
+			<p class="insert-space"></p>
+			<ul type="disk">
+
+			    <li> <em> A hands-on session with q3dfit, a powerful new PSF deconvolution and spectral analysis package</em>,</br>Ringberg, Germany, October 2022
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> The decline of star formation: Linking molecular gas, outflows & metallicity gradients</em>,</br>Reykjavik, Iceland, September 2022
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> The decline of star formation: Linking molecular gas, outflows & metallicity gradients</em>,</br>EAS, Valencia, June 2022
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> The decline of star formation: Exploring molecular gas, outflows and the early history of star formation</em>,</br>UK talk tour - ICG Portsmouth, University of Bath, Cardiff University, University of Southampton, University College London, KICC Cambridge - June 2022
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> The MIR fitting capabilities of q3dfit, a PSF deconvolution and spectral analysis tool in the wake of JWST</em>,</br>online (STScI, US), March 2022
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> MASCOT: The link between molecular gas and radially resolved galaxy properties in SDSS-IV MaNGA</em>,</br>online (Copenhagen, Denmark), September 2021
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> MASCOT: The link between molecular gas and radially resolved galaxy properties in SDSS-IV MaNGA AGN</em>,</br>online NAM (Bath, UK), July 2021
+				</li>
+				<p class="insert-space"></p>
+
+			    <li> <em> Scatter in the star-forming main sequence: A remnant of long-term variations in stellar mass growth?</em>,</br>Extragalactic Spectroscopic Surveys: Past, Present and Future of Galaxy Evolution, Santiago, Chile, November 2019 **CANCELLED DUE TO COVID-19
+				</li>
+				<p class="insert-space"></p>
+			    <li> <em> CO- vs dust-based gas masses and assessment of the dynamical mass budget in Stripe82</em>,</br> Birth, life and fate of massive galaxies and their central beating heart, Favignana Island (IT), Sept 2018 
+				</li>
+				<p class="insert-space"></p>
+			    <li> <em> CO- vs dust-based gas masses and assessment of the dynamical mass budget in Stripe82</em>,</br> Synergy between low and high redshift galaxy evolution studies in the era of JWST and EUCLID, Noordwijk (NL), July 2018 
+				</li>
+				<p class="insert-space"></p>
+			    <li> <em> Cross-calibrating CO- and dust-based gas masses and their dependence on
+					environment</em>,</br> Galaxy Evolution across time, Paris (FR), 12-16th June 2017
+				</li>
+				<p class="insert-space"></p>
+			    <li><em> Are we missing ultramassive, slowly spinning Black Holes in the SDSS colour
+					selection?</em>,</br> High Energy Astrophysics Seminar, Harvard-Smithsonian Center for Astrophysics, Cambridge (US), 7th Sept 2016</li> 
+					&rarr; <a href="https://www.youtube.com/watch?v=7q_wv61ou1E">Video link</a>
+				</li>
+				<p class="insert-space"></p><p class="insert-space"></p>
+			</ul>
+			<p class="insert-space"></p>
+			<p>I’m always happy to travel around and talk more! </br> If you’re interested in what I’m doing, please feel free to <a href="#contact" class=active>message me</a>. </br> For a more complete list of talks, please see my <a href="#cv" class=active>CV</a> below.</p>
+		</div>
+
+		<p class="insert-space"></p><hr /><p class="insert-space"></p>
+
+		<!-- Section 3 -->
+		<div id="teaching_outreach">
+			<h1>Outreach (Selection)</h1>
+			<p>Aside from doing research, I enjoy engaging in outreach. Please find a selection of outreach activities here - for a more complete summary, please refer to my CV.</p>
+			<h3>Current Outreach</h3>
+			At Heidelberg University, I am participating in the annual <a href="https://www.girls-day.de/" class="active">Girls' Day</a>, where I co-organise the online workshop "Schwarze Löcher im Universum" open to 5th & 6th grade girls in Germany. Together with Dr Dominika Wylezalek, we craft a model of an actively accreting supermassive black hole while learning more about these fascinating objects in our Universe.
+			<h3>Past Outreach</h3>
+			<p>During my time in Bath (2016-2019 roughly), I have been part of one of the University of Bath's outreach teams, led by Dr Ventsislav Valev. The main focus lies on organising <a href="http://people.bath.ac.uk/vkv23/English/EducationalOutreach.htm" class="active">science workshops </a> for primary school children on light to help to inspire the next generation of scientists! The team gratefully acknowledges funding from the Royal Society and the STFC, as well as support on equipment by Thorlabs and Zeiss.</p>
+			<!-- <p>We gratefully acknowledge funding from the Royal Society and the STFC, as well as support on our equipment by Thorlabs and Zeiss.</p> -->
+			<!-- <p class="insert-space"></p><p class="insert-space"></p> -->
+			<!-- <p>&rarr; <a href="http://people.bath.ac.uk/vkv23/English/EducationalOutreach.htm" class="active">Click here to visit our team's official webpage. </a> </p> -->
+		</div>
+		<p class="insert-space"></p><hr /><p class="insert-space"></p>
+		<!-- Section 4 -->
+		<div id="cv">
+			<h1>CV</h1>
+			<p> For an up-to-date CV, please feel free to contact me. 
+			</p>
+			<p> I will also periodically upload updated versions here: <a href="images/CV_CB_webpage.pdf" target="_blank">View/download CV</a>
+			   <!-- This section is still (somewhat) under construction. </br>			   
+			   In the meantime, a preliminary version of my CV can be found <a href="images/CV_Bertemes_2018_preliminary.pdf" target="_blank">here</a>. -->
+			</p>
+		</div>
+		<p class="insert-space"></p><hr /><p class="insert-space"></p>
+		<!-- Section 5 -->
+		<div id="contact">
+			<h1>Contact</h1>
+			<p class="insert-space"></p>
+			<ul class="feature-icons">
+				<i class="fa fa-envelope-o" aria-hidden="true" style="font-size:20px;color:grey"> </i>
+				<a href="mailto:C.Bertemes@bath.ac.uk"> &nbsp; c.bertemes[at]uni-heidelberg.de </a>
+				<br> <p class="insert-space"></p>
+				<li class="fa fa-twitter aria-hidden="true" style="font-size:20px;color:grey""></li>
+				<a href="https://twitter.com/carobertemes"> &nbsp; @carobertemes</a>
+				<br> <p class="insert-space"></p>
+				
+				<div class="flex-container">
+					<div>
+					<li class="fa fa-home  aria-hidden="true" style="font-size:20px;color:grey""> </li> 
+					</div>
+					<div>
+						 &nbsp; <strong>Postal address: </strong> <br>
+						 &nbsp; Caroline Bertemes <br> 
+						 &nbsp; Zentrum für Astronomie der Universität Heidelberg <br> 
+						 &nbsp; Astronomisches Rechen-Institut <br> 
+						 &nbsp; Mönchhofstr. 12-14 <br> 
+						 &nbsp; Germany
+					</div>
+				</div>
+				
+
+					<!--<div class="flex-container">
+						<div>
+						<p> 
+						<strong>Postal address: </strong> <br>
+						Caroline Bertemes <br> 
+						Wessex House 3.54 <br> 
+						Dept of Physics <br> 
+						University of Bath <br> 
+						BA2 7AY, Bath <br> 
+						United Kingdom
+						</p>
+						</div>
+						<div>
+						<img src="images/uob-logo-grey-transparent.png" class="pull-right"  width="300">
+						</div>
+					</div> -->
+				<img src="images/ZAH_Logo.png" class="pull-right UoB-logo"  width="300">
+			</ul>
+		</div>
+
+
+
+
+		<!-- *** Some explicit javascript for enlarging modal images -->
+		<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+		</script>
+		<!-- *** Some explicit javascript for enlarging modal images -->
+		<script>
+		// Get the modal
+		var modal = document.getElementById('myModal2');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById('myImg2');
+		var modalImg = document.getElementById("img02");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
+		    captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span2 = document.getElementsByClassName("close2")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span2.onclick = function() { 
+		  modal.style.display = "none";
+		}
+		</script>
+
+	</body>
+</html>
+
+
